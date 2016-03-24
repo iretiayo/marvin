@@ -5,6 +5,7 @@ function prepare_mnist
 
     % download
     
+    setenv('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/');
     system('DYLD_LIBRARY_PATH=""; curl -L http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz -o train-images-idx3-ubyte.gz');
     system('DYLD_LIBRARY_PATH=""; curl -L http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz -o train-labels-idx1-ubyte.gz');
     system('DYLD_LIBRARY_PATH=""; curl -L http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz  -o t10k-images-idx3-ubyte.gz');
