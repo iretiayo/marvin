@@ -1,0 +1,14 @@
+issues
+
+cuda version compartibility
+fix: clean/purge cuda and install afresh
+
+dumb issue: cudNN case-sensitive
+change cudNN to cudnn in folder /usr/local
+
+MATLAB script error on system run of curl 
+fix: run following command before running script on ubuntu
+setenv('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/');
+
+according to
+http://openstackwiki.org/wiki/Wie_Matlab_aktualisiert_dynamische_Bibliotheken%3F
